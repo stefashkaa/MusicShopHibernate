@@ -3,7 +3,7 @@ package hibernate.entities;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "COMPOSITION")
+@Table(name = "composition")
 public class Composition {
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "COMP_SEQ")
     @SequenceGenerator(name = "COMP_SEQ", sequenceName = "COMP_SEQ")

@@ -3,7 +3,7 @@ package hibernate.entities;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "EXECUTOR")
+@Table(name = "executor")
 public class Executor {
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "EXEC_SEQ")
     @SequenceGenerator(name = "EXEC_SEQ", sequenceName = "EXEC_SEQ")

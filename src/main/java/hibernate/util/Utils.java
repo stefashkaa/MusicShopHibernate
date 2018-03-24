@@ -63,7 +63,7 @@ public class Utils {
 
         Session session = HibernateUtil.openSession();
         session.beginTransaction();
-        executors = (List<Executor>) session.createQuery("select * from executor").list();
+        executors = (List<Executor>) session.createQuery("select e from Executor e").list();
         session.getTransaction().commit();
         session.close();
 
